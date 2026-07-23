@@ -1,0 +1,110 @@
+{
+  "pillars": [
+    {
+      "id": "seguridad",
+      "icon": "shield",
+      "title": "Seguridad 24/7",
+      "text": "Cámaras de monitoreo en cada sala, accesos controlados por huella y protocolos médicos revisados cada trimestre."
+    },
+    {
+      "id": "personal",
+      "icon": "heart-hands",
+      "title": "Personal calificado",
+      "text": "Educadoras tituladas en primera infancia, con certificación vigente en primeros auxilios pediátricos."
+    },
+    {
+      "id": "ambiente",
+      "icon": "leaf",
+      "title": "Ambiente estimulante",
+      "text": "Espacios diseñados por edad para el desarrollo cognitivo, motriz y sensorial de tu pequeño."
+    },
+    {
+      "id": "nutricion",
+      "icon": "bowl",
+      "title": "Nutrición consciente",
+      "text": "Menús semanales avalados por nutricionista pediátrica, adaptados a alergias e intolerancias."
+    }
+  ],
+  "routine": [
+    {
+      "time": "7:30",
+      "title": "Bienvenida y estimulación",
+      "text": "Recibimiento uno a uno y actividades sensoriales suaves para empezar el día con calma.",
+      "image": "bienvenida.jpg"
+    },
+    {
+      "time": "9:30",
+      "title": "Juego libre",
+      "text": "Exploración guiada en nuestros rincones de construcción, arte y motricidad.",
+      "image": "juego-libre.jpg"
+    },
+    {
+      "time": "12:00",
+      "title": "Alimentación guiada",
+      "text": "Comidas balanceadas en un ambiente tranquilo, fomentando autonomía a su ritmo.",
+      "image": "alimentacion.jpg"
+    },
+    {
+      "time": "13:30",
+      "title": "Siesta reparadora",
+      "text": "Descanso individual en cunas o colchonetas, con luz tenue y música suave.",
+      "image": "siesta.jpg"
+    }
+  ],
+  "testimonials": [
+    {
+      "name": "Elena",
+      "childInfo": "mamá de Mateo (18 meses)",
+      "quote": "Tenía miedo de dejarlo, pero las maestras hicieron que el proceso fuera hermoso. Ahora Mateo va feliz cada mañana.",
+      "avatar": "elena.jpg"
+    },
+    {
+      "name": "Andrés",
+      "childInfo": "papá de Sofía (2 años)",
+      "quote": "La transición fue mucho más suave de lo que esperaba. Sentimos que Sofía está en un segundo hogar de verdad.",
+      "avatar": "andres.jpg"
+    },
+    {
+      "name": "Camila",
+      "childInfo": "mamá de Lucas (14 meses)",
+      "quote": "Cada tarde nos cuentan cómo fue su día con fotos y detalles. Esa comunicación nos da una tranquilidad enorme.",
+      "avatar": "camila.jpg"
+    }
+  ],
+  "admissionSteps": [
+    {
+      "title": "Agenda tu visita",
+      "text": "Virtual o presencial, eliges el formato que más te acomode."
+    },
+    {
+      "title": "Conocemos a tu pequeño",
+      "text": "Conversamos sobre sus necesidades, rutinas y personalidad."
+    },
+    {
+      "title": "Reserva de plaza",
+      "text": "Iniciamos juntos un periodo de adaptación acompañado."
+    }
+  ],
+  "faq": [
+    {
+      "question": "¿Cómo es el periodo de adaptación?",
+      "answer": "Es un proceso gradual de una a dos semanas, en compañía de un adulto de confianza al inicio, hasta que tu hijo se sienta seguro con su nueva rutina y educadoras."
+    },
+    {
+      "question": "¿Qué pasa si mi hijo se enferma?",
+      "answer": "Contamos con protocolo de aislamiento y enfermería propia. Te contactamos de inmediato por WhatsApp y seguimos las indicaciones de tu pediatra."
+    },
+    {
+      "question": "¿Tienen flexibilidad de horario?",
+      "answer": "Sí, ofrecemos jornada media y completa, con opción de horario extendido bajo previa coordinación."
+    },
+    {
+      "question": "¿Qué incluyen las cuotas?",
+      "answer": "Alimentación completa, materiales educativos, seguro escolar y reportes diarios de actividades."
+    },
+    {
+      "question": "¿Cuál es la proporción educadora-niños?",
+      "answer": "Mantenemos un máximo de 4 niños por educadora en sala cuna, y 6 niños por educadora en sala de exploradores."
+    }
+  ]
+}

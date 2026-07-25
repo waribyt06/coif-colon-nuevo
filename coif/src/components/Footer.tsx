@@ -2,7 +2,7 @@ import { Sprout, Instagram, Facebook, MapPin, Phone, Mail } from 'lucide-react';
 
 const contactItems = [
   { icon: MapPin, text: 'Calle Las Orquídeas, San Miguelito' },
-  { icon: Phone, text: '+507 000-0000' },
+  { icon: Phone, text: '+507 6342-4582' },
   { icon: Mail, text: 'hola@raices.cr' },
 ];
 

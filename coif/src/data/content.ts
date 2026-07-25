@@ -39,7 +39,7 @@ export const pillars: Pillar[] = [
     id: 'seguridad',
     icon: ShieldCheck,
     title: 'Seguridad 24/7',
-    text: 'Cámaras de monitoreo en cada sala, accesos controlados por huella y protocolos médicos revisados cada trimestre.',
+    text: 'Cámaras de monitoreo en cada sala, accesos controlados por huella y protocolos médicos revisados cada periodo escolar.',
   },
   {
     id: 'personal',

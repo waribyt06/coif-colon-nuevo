@@ -31,7 +31,7 @@ export default function Header() {
           <span className="grid h-10 w-10 place-items-center rounded-2xl bg-peach-500 text-white shadow-soft">
             <Sprout className="h-5 w-5" />
           </span>
-          <span className="font-display text-xl font-bold">coif</span>
+          <span className="font-display text-xl font-bold">CAIPI VF</span>
         </a>
 
         <nav className="hidden items-center gap-8 md:flex" aria-label="Navegación principal">

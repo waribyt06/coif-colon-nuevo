@@ -301,11 +301,15 @@ button { font: inherit; }
 /* ==========================================================================
    Timeline — Rutina
    ========================================================================== */
-.routine { background: var(--bg-sand); }
+.routine { 
+  background: var(--bg-sand); 
+}
+
 .timeline {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: var(--space-sm);
+  align-items: start; /* Evita que las tarjetas se estiren verticalmente de forma extraña */
 }
 
 .timeline-item {
@@ -316,6 +320,7 @@ button { font: inherit; }
 }
 
 .timeline-figure { 
+  /* Proporción original para computadora */
   aspect-ratio: 4/3; 
   background: var(--sage-100); 
   overflow: hidden; 
@@ -324,18 +329,36 @@ button { font: inherit; }
 .timeline-figure img { 
   width: 100%; 
   height: 100%; 
-  object-fit: cover; /* Mantén cover si usas la opción de media query abajo */
+  object-fit: cover; 
 }
 
-/* Media Queries */
+/* --- Media Queries --- */
+
 @media (max-width: 960px) { 
-  .timeline { grid-template-columns: repeat(2, 1fr); } 
+  .timeline { 
+    grid-template-columns: repeat(2, 1fr); 
+  } 
 }
 
 @media (max-width: 560px) { 
-  .timeline { grid-template-columns: 1fr; } 
-  /* Ajuste de aspecto para evitar recortes excesivos en móvil */
-  .timeline-figure { aspect-ratio: 16 / 9; } 
+  .timeline { 
+    /* 2 columnas en teléfonos */
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 8px; /* Espacio ligeramente menor para que quepa bien todo en móvil */
+  } 
+
+  .timeline-figure { 
+    /* Desactivamos el recorte y el recuadro forzado en móvil */
+    aspect-ratio: auto; 
+    height: auto;
+  } 
+
+  .timeline-figure img { 
+    /* La imagen toma su tamaño real sin recortarse */
+    height: auto; 
+    object-fit: contain; 
+    display: block; 
+  }
 }
 
 /* ==========================================================================

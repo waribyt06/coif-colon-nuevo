@@ -24,12 +24,14 @@ export default function Routine() {
               }`}
               style={{ transitionDelay: `${i * 100}ms` }}
             >
-              <div className="relative h-48 overflow-hidden md:h-full">
+              {/* CAMBIO AQUÍ: 'h-auto' en móvil en lugar de 'h-48' */}
+              <div className="relative h-auto overflow-hidden md:h-full">
+                {/* CAMBIO AQUÍ: 'object-contain' en móvil y 'object-cover' solo en pantallas medianas (md:object-cover) */}
                 <img
                   src={step.image}
                   alt={step.title}
                   loading="lazy"
-                  className="h-full w-full object-cover transition duration-700 hover:scale-105"
+                  className="h-auto w-full object-contain md:h-full md:object-cover transition duration-700 hover:scale-105"
                 />
               </div>
               <div className="p-7 md:p-9">

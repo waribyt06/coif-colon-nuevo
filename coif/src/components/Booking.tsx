@@ -1,16 +1,11 @@
-import { useMemo, useState } from 'react';
+import { useState } from 'react';
 import { supabase } from '@/lib/supabase';
-import {
-  ageOptions,
-  buildAvailableDays,
-  slotTemplates,
-} from '@/data/content';
+import { ageOptions } from '@/data/content';
 import SectionHeading from './SectionHeading';
 import {
   CheckCircle2,
   Loader2,
   CalendarCheck,
-  Clock,
   ShieldCheck,
   Users,
   MessagesSquare,
@@ -25,26 +20,15 @@ const bookingPoints = [
 ];
 
 export default function Booking() {
-  // Available days are stable for the session — computed once.
-  const days = useMemo(() => buildAvailableDays(), []);
-
-  const [selectedDay, setSelectedDay] = useState<string | null>(null);
-  const [selectedSlot, setSelectedSlot] = useState<string | null>(null);
+  const [selectedDay, setSelectedDay] = useState<string>('');
   const [status, setStatus] = useState<Status>('idle');
   const [errorMsg, setErrorMsg] = useState('');
   const [form, setForm] = useState({ parentName: '', contact: '', babyAge: '' });
 
-  const slotLabel = selectedDay && selectedSlot ? `${selectedDay} · ${selectedSlot}` : '';
-
-  const handleDayClick = (label: string) => {
-    setSelectedDay(label);
-    setSelectedSlot(null);
-  };
-
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!slotLabel) {
-      setErrorMsg('Por favor selecciona un día y horario para tu visita.');
+    if (!selectedDay) {
+      setErrorMsg('Por favor selecciona una fecha para tu visita.');
       return;
     }
     setStatus('submitting');
@@ -55,7 +39,7 @@ export default function Booking() {
       parent_name: form.parentName,
       contact: form.contact,
       baby_age: form.babyAge,
-      slot: slotLabel,
+      slot: selectedDay,
     });
 
     if (error) {
@@ -65,8 +49,7 @@ export default function Booking() {
     }
     setStatus('success');
     setForm({ parentName: '', contact: '', babyAge: '' });
-    setSelectedDay(null);
-    setSelectedSlot(null);
+    setSelectedDay('');
   };
 
   return (
@@ -185,64 +168,19 @@ export default function Booking() {
                     </select>
                   </div>
 
-                  <fieldset>
-                    <legend className="label">Elige fecha y hora</legend>
-                    <div
-                      className="grid grid-cols-3 gap-2 sm:grid-cols-6"
-                      role="group"
-                      aria-label="Días disponibles"
-                    >
-                      {days.map((day) => {
-                        const active = selectedDay === day.label;
-                        return (
-                          <button
-                            key={day.date}
-                            type="button"
-                            aria-pressed={active}
-                            onClick={() => handleDayClick(day.label)}
-                            className={`flex flex-col items-center rounded-2xl border-2 px-2 py-3 transition ${
-                              active
-                                ? 'border-peach-400 bg-peach-50 text-peach-600'
-                                : 'border-cream-200 bg-white text-ink-800 hover:border-teal-300'
-                            }`}
-                          >
-                            <span className="text-xs font-semibold">{day.dow}</span>
-                            <span className="font-display text-lg font-bold">
-                              {day.dom}
-                            </span>
-                          </button>
-                        );
-                      })}
-                    </div>
-
-                    {selectedDay && (
-                      <div
-                        className="mt-3 grid grid-cols-2 gap-2 sm:grid-cols-4"
-                        role="group"
-                        aria-label="Horarios disponibles"
-                      >
-                        {slotTemplates.map((time) => {
-                          const active = selectedSlot === time;
-                          return (
-                            <button
-                              key={time}
-                              type="button"
-                              aria-pressed={active}
-                              onClick={() => setSelectedSlot(time)}
-                              className={`flex items-center justify-center gap-1.5 rounded-2xl border-2 px-3 py-2.5 text-sm font-semibold transition ${
-                                active
-                                  ? 'border-teal-400 bg-teal-50 text-teal-700'
-                                  : 'border-cream-200 bg-white text-ink-800 hover:border-teal-300'
-                              }`}
-                            >
-                              <Clock className="h-3.5 w-3.5" />
-                              {time}
-                            </button>
-                          );
-                        })}
-                      </div>
-                    )}
-                  </fieldset>
+                  <div className="flex flex-col gap-2 text-left">
+                    <label className="text-sm font-medium text-gray-700">
+                      Elige la fecha
+                    </label>
+                    <input 
+                      type="date" 
+                      min={new Date().toISOString().split('T')[0]}
+                      value={selectedDay}
+                      onChange={(e) => setSelectedDay(e.target.value)}
+                      className="w-full rounded-xl border border-gray-200 p-3 text-gray-700 outline-none focus:border-orange-500"
+                      required
+                    />
+                  </div>
 
                   {errorMsg && (
                     <p className="rounded-2xl bg-rose-100 px-4 py-3 text-sm font-semibold text-rose-400">

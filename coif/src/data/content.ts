@@ -39,25 +39,25 @@ export const pillars: Pillar[] = [
     id: 'seguridad',
     icon: ShieldCheck,
     title: 'Seguridad 24/7',
-    text: 'Cámaras de monitoreo en cada sala, accesos controlados por huella y protocolos médicos revisados cada periodo escolar.',
+    text: 'Sistemas de vigilancia supervisados internamente en cada área y personal capacitado con años de experiencia para reaccionar al instante y eficacia ante cualquier eventualidad.',
   },
   {
     id: 'personal',
     icon: HeartHandshake,
-    title: 'Personal calificado',
-    text: 'Educadoras tituladas en primera infancia, con certificación vigente en primeros auxilios pediátricos.',
+    title: 'Personal idóneo',
+    text: 'Educadoras con amplia trayectoria en el cuidado infantil, comprometidas con el desarrollo integral, el bienestar y la atención con amor de tu pequeño.',
   },
   {
     id: 'ambiente',
     icon: Leaf,
     title: 'Ambiente estimulante',
-    text: 'Espacios diseñados por edad para el desarrollo cognitivo, motriz y sensorial de tu pequeño.',
+    text: 'Áreas adaptadas para la estimulación temprana de los más pequeños y un área dedicada al refuerzo escolar para niños de 1.° a 6.° grado.',
   },
   {
     id: 'nutricion',
     icon: Salad,
-    title: 'Nutrición consciente',
-    text: 'Menús semanales avalados por nutricionista pediátrica, adaptados a alergias e intolerancias.',
+    title: 'Hábitos Saludables',
+    text: 'espacios limpios y adecuados para la hora de la merienda o almuerzo, fomentando la autonomía, los buenos hábitos en la mesa y el respeto por los alimentos que traen desde casa.',
   },
 ];
 

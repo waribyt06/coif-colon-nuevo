@@ -63,10 +63,10 @@ export const pillars: Pillar[] = [
 
 export const routine: RoutineStep[] = [
   {
-    time: '7:30',
+    time: '8:30',
     title: 'Bienvenida y estimulación',
     text: 'Recibimiento uno a uno y actividades sensoriales suaves para empezar el día con calma.',
-    image: 'https://images.pexels.com/photos/8923082/pexels-photo-8923082.jpeg?auto=compress&cs=tinysrgb&w=700',
+    image: '/bienvenida.jpg', 
   },
   {
     time: '9:30',

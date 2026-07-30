@@ -1,9 +1,9 @@
 import { Sprout, Instagram, Facebook, MapPin, Phone, Mail } from 'lucide-react';
 
 const contactItems = [
-  { icon: MapPin, text: 'Calle Las Orquídeas, San Miguelito' },
-  { icon: Phone, text: '+507 6342-4582' },
-  { icon: Mail, text: 'hola@raices.cr' },
+  { icon: MapPin, text: 'calle 8 melendez y santa y sabel ' },
+  { icon: Phone, text: '+507 6187-2196' },
+  { icon: Mail, text: 'virgenfatima8065@gmail.com' },
 ];
 
 export default function Footer() {
@@ -16,10 +16,10 @@ export default function Footer() {
               <span className="grid h-10 w-10 place-items-center rounded-2xl bg-peach-500 text-white">
                 <Sprout className="h-5 w-5" />
               </span>
-              <span className="font-display text-xl font-bold">Raíces</span>
+              <span className="font-display text-xl font-bold">CAIPI VF</span>
             </a>
             <p className="mt-4 text-sm leading-relaxed text-cream-100/70">
-              Centro infantil de 3 meses a 4 años. Un espacio para crecer con calma.
+              Centro infantil de 1 a 5 años. Un espacio para crecer con calma.
             </p>
           </div>
 

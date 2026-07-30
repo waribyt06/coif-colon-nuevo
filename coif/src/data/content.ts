@@ -66,34 +66,46 @@ export const routine: RoutineStep[] = [
     time: '8:30',
     title: 'Bienvenida y estimulación',
     text: 'Recibimiento uno a uno y actividades sensoriales suaves para empezar el día con calma.',
-    image: '/bienvenida.jpg', 
+   image: 'bienvenida.jpg',
   },
   {
     time: '9:30',
     title: 'Juego libre',
     text: 'Exploración guiada en nuestros rincones de construcción, arte y motricidad.',
-    image: 'https://images.pexels.com/photos/8535193/pexels-photo-8535193.jpeg?auto=compress&cs=tinysrgb&w=700',
+    image: 'juegolibre.jpg',
+  },
+  {
+    time: '11:00',
+  title: 'recreo y merienda',
+    text: 'Un momento para compartir y nutrirse en un ambiente tranquilo,donde fortalecen sus hábitos e  independencia a su propio ritmo.',
+    image: 'nutricion.jpg',
   },
   {
     time: '12:00',
-    title: 'Alimentación guiada',
-    text: 'Comidas balanceadas en un ambiente tranquilo, fomentando autonomía a su ritmo.',
-    image: 'https://images.pexels.com/photos/5083238/pexels-photo-5083238.jpeg?auto=compress&cs=tinysrgb&w=700',
-  },
-  {
-    time: '13:30',
     title: 'Siesta reparadora',
-    text: 'Descanso individual en cunas o colchonetas, con luz tenue y música suave.',
-    image: 'https://images.pexels.com/photos/35422467/pexels-photo-35422467.jpeg?auto=compress&cs=tinysrgb&w=700',
+    text: 'Descanso individual en colchonetas, con luz tenue y vigilacion constante para garantizar un sueño seguro y reparador.',
+    image: 'siesta.jpg',
   },
+{
+  time: "2:30 PM", 
+  title: "After school", 
+  text: "Actividades de refuerzo escolar y talleres creativos para niños de 1.° a 6.° grado, fomentando el aprendizaje y la expresión artística.",
+  image: "after.jpg",
+}
+,{
+  time: "5:30PM", 
+  title: "Encuentro Familiar y Despedida", 
+  text: "Cerramos el día preparando a cada niño para su reencuentro con la familia de manera serena y segura. Mientras los más pequeños de CAIPI se alistan con canciones de cierre e informes sobre su día, los grandes de After School revisan sus mochilas y comparten los logros del día. Garantizamos un proceso de salida fluido y seguro, donde los niños disfrutan de actividades tranquilas (cuentos, juegos de mesa) hasta la llegada de sus padres.",
+  image: "salida.jpg",
+}
 ];
 
 export const testimonials: Testimonial[] = [
   {
-    name: 'Elena',
-    childInfo: 'mamá de Mateo (18 meses)',
-    quote: 'Tenía miedo de dejarlo, pero las maestras hicieron que el proceso fuera hermoso. Ahora Mateo va feliz cada mañana.',
-    avatar: 'https://images.pexels.com/photos/29096583/pexels-photo-29096583.jpeg?auto=compress&cs=tinysrgb&w=200',
+    name: 'Zaida',
+    childInfo: 'mamá de Darnell (3 años)',
+    quote: 'Tenía miedo de dejarlo, pero las maestras hicieron que el proceso fuera hermoso. Ahora Darnell va feliz cada mañana.',
+    avatar: 'Darnell.jpg',
   },
   {
     name: 'Andrés',
@@ -102,10 +114,10 @@ export const testimonials: Testimonial[] = [
     avatar: 'https://images.pexels.com/photos/4971323/pexels-photo-4971323.jpeg?auto=compress&cs=tinysrgb&w=200',
   },
   {
-    name: 'Camila',
-    childInfo: 'mamá de Lucas (14 meses)',
+    name: 'sasha',
+    childInfo: 'mamá de Jomar (2 años)',
     quote: 'Cada tarde nos cuentan cómo fue su día con fotos y detalles. Esa comunicación nos da una tranquilidad enorme.',
-    avatar: 'https://images.pexels.com/photos/27176211/pexels-photo-27176211.jpeg?auto=compress&cs=tinysrgb&w=200',
+    avatar: 'Antony.jpg',
   },
 ];
 
@@ -118,38 +130,38 @@ export const admissionSteps: AdmissionStep[] = [
 export const faq: FaqItem[] = [
   {
     question: '¿Cómo es el periodo de adaptación?',
-    answer: 'Es un proceso gradual de una a dos semanas, en compañía de un adulto de confianza al inicio, hasta que tu hijo se sienta seguro con su nueva rutina y educadoras.',
+    answer: 'Es un proceso gradual de una a dos semanas, en compañía de las maestras al inicio, hasta que tu hijo se sienta seguro con su nueva rutina y educadoras.',
   },
   {
     question: '¿Qué pasa si mi hijo se enferma?',
-    answer: 'Contamos con protocolo de aislamiento y enfermería propia. Te contactamos de inmediato por WhatsApp y seguimos las indicaciones de tu pediatra.',
+    answer: 'Promovemos un entorno sano, por lo que pedimos no asistir si hay malestar o fiebre. Si el niño presenta síntomas en el centro, lo cuidamos con atención personalizada mientras contactamos inmediatamente a los padres o tutores autorizados para que vengan a buscarlo.',
   },
   {
     question: '¿Tienen flexibilidad de horario?',
-    answer: 'Sí, ofrecemos jornada media y completa, con opción de horario extendido bajo previa coordinación.',
+    answer: 'Sí, ofrecemos jornada completa, con opción de horario extendido bajo previa coordinación.',
   },
   {
     question: '¿Qué incluyen las cuotas?',
     answer: 'Alimentación completa, materiales educativos, seguro escolar y reportes diarios de actividades.',
   },
   {
-    question: '¿Cuál es la proporción educadora-niños?',
-    answer: 'Mantenemos un máximo de 4 niños por educadora en sala cuna, y 6 niños por educadora en sala de exploradores.',
+    question: '¿Cómo organizan los grupos y la atención de los estudiantes?',
+    answer: 'Contamos con instalaciones y una estructura docente diseñadas para recibir a una amplia comunidad escolar. Organizados por niveles (Pre-Kinder, Kinder y After School), adaptamos la asignación de nuestras educadoras y equipos de apoyo según la dinámica de cada grupo, garantizando una supervisión profesional, ordenada y de alta calidad en todo momento.',
   },
 ];
 
 export const heroImage =
-  'https://images.pexels.com/photos/8535592/pexels-photo-8535592.jpeg?auto=compress&cs=tinysrgb&w=1600';
+  'portada.jpg';
 
 export const ageOptions = [
-  { value: '3-12m', label: '3 a 12 meses' },
   { value: '1-2a', label: '1 a 2 años' },
   { value: '2-3a', label: '2 a 3 años' },
   { value: '3-4a', label: '3 a 4 años' },
+  { value: '4-5a', label: '4 a 5 años' },
 ];
 
 // Static slot templates for the booking calendar.
-export const slotTemplates = ['9:00', '10:30', '13:00', '15:30'];
+export const slotTemplates = ['9:00', '10:30', '1:00', '3:30'];
 
 const DOW = ['Dom', 'Lun', 'Mar', 'Mié', 'Jue', 'Vie', 'Sáb'];
 

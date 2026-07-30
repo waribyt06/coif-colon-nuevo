@@ -11,7 +11,7 @@ export default function Routine() {
       <div className="container-page">
         <SectionHeading
           eyebrow="El día a día"
-          title="Un día en Raíces"
+          title="Un día en este CAIPI"
           lead="La misma calma, todos los días. Así se ve el ritmo que aprenderá a reconocer como suyo."
         />
 

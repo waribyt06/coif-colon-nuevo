@@ -19,14 +19,14 @@ export default function Hero() {
         <div className="max-w-2xl animate-fade-up">
           <span className="chip bg-white/15 text-white backdrop-blur-sm">
             <CalendarHeart className="h-4 w-4" />
-            Centro infantil · 3 meses a 4 años
+            Centro infantil · 1 a 5 años
           </span>
           <h1 className="mt-5 font-display text-4xl font-bold leading-tight text-white sm:text-5xl md:text-6xl">
             El segundo hogar donde tus hijos crecen seguros, felices y amados.
           </h1>
           <p className="mt-5 max-w-xl text-lg leading-relaxed text-cream-100/90">
             Cada día, un paso más hacia su propia raíz: acompañamiento cercano,
-            educadoras tituladas y un espacio pensado para que florezcan a su ritmo.
+            educadoras idóneos y un espacio pensado para que florezcan a su ritmo.
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <a href="#agenda" className="btn-primary">
